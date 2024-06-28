@@ -1,0 +1,7 @@
+int arr[5] = {1, 2, 3, 4, 5};
+int *ptr = arr;  // Pointer points to the first element of the array
+
+// Accessing elements using pointer arithmetic
+printf("%d\n", *ptr);   // prints 1
+ptr++;  // Move pointer to the next element
+printf("%d\n", *ptr);   // prints 2
