@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main() {
+    int a = 10, b = 5;
+    int sum, difference, product;
+    float quotient;
+
+    // Addition
+    sum = a + b;
+    printf("Sum: %d\n", sum);
+
+    // Subtraction
+    difference = a - b;
+    printf("Difference: %d\n", difference);
+
+    // Multiplication
+    product = a * b;
+    printf("Product: %d\n", product);
+
+    // Division
+    quotient = (float) a / b; // Ensure one operand is cast to float for accurate division
+    printf("Quotient: %.2f\n", quotient);
+
+    return 0;
+}
