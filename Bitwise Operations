@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main() {
+    unsigned int a = 60;    // Binary: 0011 1100
+    unsigned int b = 13;    // Binary: 0000 1101
+    unsigned int result;
+
+    // Bitwise AND
+    result = a & b;
+    printf("a & b = %u\n", result);   // Result: 0000 1100 (Decimal: 12)
+
+    // Bitwise OR
+    result = a | b;
+    printf("a | b = %u\n", result);   // Result: 0011 1101 (Decimal: 61)
+
+    // Bitwise XOR
+    result = a ^ b;
+    printf("a ^ b = %u\n", result);   // Result: 0011 0001 (Decimal: 49)
+
+    // Bitwise NOT (Unary)
+    result = ~a;
+    printf("~a = %u\n", result);      // Result: 1100 0011 (Decimal: 4294967235), since a is unsigned int, and this is a 
