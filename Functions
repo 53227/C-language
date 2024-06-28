@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+// Function declaration (prototype)
+int add(int num1, int num2);
+void greet(char name[]);
+
+int main() {
+    int result;
+
+    // Call the add function
+    result = add(5, 3);
+    printf("Result of addition: %d\n", result);  // Output: 8
+
+    // Call the greet function
+    greet("Alice");  // Output: Hello, Alice!
+
+    return 0;
+}
+
+// Function definition for add function
+int add(int num1, int num2) {
+    return num1 + num2;
+}
+
+// Function definition for greet function
+void greet(char name[]) {
+    printf("Hello, %s!\n", name);
+}
