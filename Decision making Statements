@@ -1,0 +1,48 @@
+#include <stdio.h>
+
+int main() {
+    int x = 10;
+    
+    // if statement
+    if (x > 5) {
+        printf("x is greater than 5\n");
+    }
+    
+    // if-else statement
+    if (x > 15) {
+        printf("x is greater than 15\n");
+    } else {
+        printf("x is not greater than 15\n");
+    }
+    
+    // else-if ladder
+    if (x > 15) {
+        printf("x is greater than 15\n");
+    } else if (x > 10) {
+        printf("x is greater than 10 but not greater than 15\n");
+    } else {
+        printf("x is 10 or less\n");
+    }
+    
+    // switch statement
+    int choice = 2;
+    switch (choice) {
+        case 1:
+            printf("Choice is 1\n");
+            break;
+        case 2:
+            printf("Choice is 2\n");
+            break;
+        case 3:
+            printf("Choice is 3\n");
+            break;
+        default:
+            printf("Invalid choice\n");
+    }
+    
+    // Conditional operator (?:)
+    int y = (x > 5) ? 100 : 200;
+    printf("y is %d\n", y);
+    
+    return 0;
+}
