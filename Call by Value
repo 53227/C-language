@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+// Function prototype
+void modifyValue(int num);
+
+int main() {
+    int number = 10;
+
+    printf("Before calling modifyValue: %d\n", number);  // Output: 10
+
+    // Call the function
+    modifyValue(number);
+
+    printf("After calling modifyValue: %d\n", number);   // Output: 10
+
+    return 0;
+}
+
+// Function definition
+void modifyValue(int num) {
+    num = 20;
+    printf("Inside modifyValue: %d\n", num);  // Output: 20
+}
