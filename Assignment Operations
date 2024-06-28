@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main() {
+    int a = 10, b = 5;
+    int result;
+
+    // Basic assignment
+    result = a + b;
+    printf("Initial result: %d\n", result);
+
+    // Compound assignment
+    result += 5;   // Equivalent to: result = result + 5;
+    printf("After addition: %d\n", result);
+
+    result -= 3;   // Equivalent to: result = result - 3;
+    printf("After subtraction: %d\n", result);
+
+    result *= 2;   // Equivalent to: result = result * 2;
+    printf("After multiplication: %d\n", result);
+
+    result /= 4;   // Equivalent to: result = result / 4;
+    printf("After division: %d\n", result);
+
+    result %= 3;   // Equivalent to: result = result % 3;
+    printf("After modulus: %d\n", result);
+
+    return 0;
+}
