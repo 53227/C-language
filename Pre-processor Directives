@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+// Macro definition using #define directive
+#define PI 3.14159
+
+// Conditional compilation using #ifdef and #endif directives
+#define DEBUG 1
+
+int main() {
+    // Using a defined constant
+    printf("Value of PI: %f\n", PI);
+
+    // Conditional compilation based on DEBUG macro
+    #ifdef DEBUG
+        printf("Debug mode is enabled\n");
+    #else
+        printf("Debug mode is disabled\n");
+    #endif
+
+    // Using #if directive for conditional compilation
+    #if PI > 3
+        printf("PI is greater than 3\n");
+    #else
+        printf("PI is not greater than 3\n");
+    #endif
+
+    return 0;
+}
