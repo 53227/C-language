@@ -1,0 +1,5 @@
+int x = 10;
+int *ptr = &x;      // Pointer to x
+int **ptr_to_ptr = &ptr;  // Pointer to ptr
+
+printf("%d\n", **ptr_to_ptr);  // prints the value of x (which is 10)
